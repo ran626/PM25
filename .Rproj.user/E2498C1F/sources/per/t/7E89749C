@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512740438141.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1678082059",
+    "id" : "7E89749C",
+    "lastKnownWriteTime" : 1512740842,
+    "last_content_update" : 1512740842,
+    "path" : "C:/Users/Ran/Desktop/PM25/linear_regression.R",
+    "project_path" : "linear_regression.R",
+    "properties" : {
+        "cursorPosition" : "0,21",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

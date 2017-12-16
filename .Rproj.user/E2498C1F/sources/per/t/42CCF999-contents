@@ -1,0 +1,12 @@
+source('read.R')
+
+# get your current working directory
+getwd()
+
+# read all each 4 csv files (db.csv, df.csv, db_fg.csv, df_fg.csv) 
+# for all in a folder
+
+
+Read.Folder('C:/Users/Ran/Desktop/PM25_TEST/2002185')
+
+

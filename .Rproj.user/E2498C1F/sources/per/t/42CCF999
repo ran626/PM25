@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512741719766.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1521606854",
+    "id" : "42CCF999",
+    "lastKnownWriteTime" : 1512741995,
+    "last_content_update" : 1512741995159,
+    "path" : "C:/Users/Ran/Desktop/PM25/main.R",
+    "project_path" : "main.R",
+    "properties" : {
+        "cursorPosition" : "10,0",
+        "scrollLine" : "3"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

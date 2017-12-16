@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512739040743.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3084391384",
+    "id" : "7BB0E21F",
+    "lastKnownWriteTime" : 1512739670,
+    "last_content_update" : 1512739670630,
+    "path" : "C:/Users/Ran/Desktop/PM25/merge_modis.R",
+    "project_path" : "merge_modis.R",
+    "properties" : {
+        "cursorPosition" : "0,35",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

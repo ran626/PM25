@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512738488277.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2620422158",
+    "id" : "1D511EFD",
+    "lastKnownWriteTime" : 1512532054,
+    "last_content_update" : 1512532054,
+    "path" : "C:/Users/Ran/Desktop/PM25/get_avail.R",
+    "project_path" : "get_avail.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,5 @@
+Merge.Modis <- function(df, keyword){
+  if (!is.null(df)){
+    return(df[[keyword]])
+  }
+}

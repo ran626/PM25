@@ -1,0 +1,11 @@
+Get.Avail <- function(dir.data, dir.flag){
+
+  data <- read.csv(dir.data)
+  data <- matrix(unlist(data), ncol = length(data), byrow = TRUE)
+  
+  flag <- read.csv(dir.flag)
+  flag <- matrix(unlist(flag), ncol = length(flag), byrow = TRUE)
+  
+  filter.modis <- !(flag == -9999 | flag == 0 | data == -9999)
+  return(filter.modis)
+}

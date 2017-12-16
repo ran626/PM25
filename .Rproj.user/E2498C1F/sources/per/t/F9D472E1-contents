@@ -1,0 +1,31 @@
+Merge.DB.DT <- function(r.DB,r.DT, dir.data.DB, dir.data.DT, dir.data.DB.FG, dir.data.DT.FG){
+  filter.modis <- r.DB & r.DT
+  if (sum(filter.modis==FALSE) != length(filter.modis)){
+    Filter <- function(f, d){
+      if(f) {
+        #print(d)
+        return(d)
+      }
+    }
+    data.DB = read.csv(dir.data.DB)
+    data.DB = matrix(unlist(data.DB), ncol = length(data.DB), byrow = TRUE)
+    flag.DB <- read.csv(dir.data.DB.FG)
+    flag.DB <- matrix(unlist(flag.DB), ncol = length(flag.DB), byrow = TRUE)
+    result.DB <- mapply(Filter, f = filter.modis, d = data.DB)
+    result.DB.FG <- mapply(Filter, f = filter.modis, d = flag.DB) 
+
+    data.DT = read.csv(dir.data.DT)
+    data.DT = matrix(unlist(data.DT), ncol = length(data.DT), byrow = TRUE)
+    flag.DT <- read.csv(dir.data.DT.FG)
+    flag.DT <- matrix(unlist(flag.DT), ncol = length(flag.DT), byrow = TRUE)
+    result.DT <- mapply(Filter, f = filter.modis, d = data.DT)
+    result.DT.FG <- mapply(Filter, f = filter.modis, d = flag.DT) 
+    
+    df <- data.frame(db = unlist(result.DB), dt = unlist(result.DT), db.fg = unlist(result.DB.FG), dt.fg = unlist(result.DT.FG))
+    return(df)      
+  } else {
+    return(NULL)
+  }
+}
+
+

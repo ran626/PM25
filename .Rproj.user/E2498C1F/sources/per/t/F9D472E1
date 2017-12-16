@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512738493358.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "626689852",
+    "id" : "F9D472E1",
+    "lastKnownWriteTime" : 1512535616,
+    "last_content_update" : 1512535616,
+    "path" : "C:/Users/Ran/Desktop/PM25/merge_db_dt.R",
+    "project_path" : "merge_db_dt.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

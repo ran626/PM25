@@ -1,0 +1,23 @@
+source("read_hdf.R")
+source("split_prefix.R")
+source("linear_regression.R")
+
+Read.Folder <- function(path.dir){
+	l <- as.vector(list.files(path = path.dir , pattern = "DB.csv", full.names = TRUE))
+	l2 <- lapply(l, Split.Prefix,"DB")
+	df <- lapply(l2, Read1.HDF)
+	db.vector <- numeric(0)
+	db.vector <- unlist(c(db.vector,sapply(df, Merge.Modis,"db", simplify = TRUE)))
+	db.fg.vector <- numeric(0)
+	db.fg.vector <- unlist(c(db.fg.vector,sapply(df, Merge.Modis,"db.fg", simplify = TRUE)))
+	dt.vector <- numeric(0)
+	dt.vector <- unlist(c(dt.vector,sapply(df, Merge.Modis,"dt", simplify = TRUE)))
+	dt.fg.vector <- numeric(0)
+	dt.fg.vector <- unlist(c(dt.fg.vector,sapply(df, Merge.Modis,"dt.fg", simplify = TRUE)))
+
+	df.all <- data.frame(db = db.vector, dt = dt.vector, db.fg = db.fg.vector, dt.fg = dt.fg.vector)
+	# Print all summaries of linear regression models
+	Linear.Regression(df.all)
+
+}
+

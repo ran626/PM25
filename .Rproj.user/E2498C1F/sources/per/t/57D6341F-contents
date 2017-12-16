@@ -1,0 +1,3 @@
+Split.Prefix <- function(str, keyword){
+  return(strsplit(str,keyword)[[1]][1])
+}
