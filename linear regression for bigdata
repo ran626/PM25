@@ -1,0 +1,6 @@
+#by RAN L
+library(bigmemory.sri)
+library(bigmemory)
+library(foreach)
+library(biganaltyics)
+fit<-bigglm.big.matrix(db~dt,data=df)
